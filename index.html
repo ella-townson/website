@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CodePen Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="sidebar">
+  <!-- Other sidebar content -->
+  <header>
+      <img class="profile-img" src="profile.jpg" alt="Profile Picture">
+      <ul>
+          <li><b>Ella Townson</b></li>
+          <li>Data Consultant 1</li>
+      </ul>
+  </header>
+
+      <!-- Contact Buttons (Email, Phone, LinkedIn) -->
+      <div class="contact-buttons">
+          <button class="contact-button" id="email-button" onclick="window.location.href='mailto:ella.townson@accenture.com'">Email: ella.townson@accenture.com</button>
+          <button class="contact-button" id="phone-button" onclick="window.location.href='tel:+447456579234'">Phone: +44 7456 579 234</button>
+          <button class="contact-button" id="linkedin-button" onclick="window.location.href='https://linkedin.com/in/ella_townson'">LinkedIn</button>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="email-form">
+          <input id="name" type="text" placeholder="Name">
+          <input id="email" type="text" placeholder="Email">
+          <textarea id="comment" type="text" placeholder="Comment"></textarea>
+          <button class="contact">Send</button>
+      </form>
+  </div>
+</div>
+
+<!-- Main Content Section -->
+<div id="main-content">
+  <!-- About Me Section -->
+  <section id="about" class="container">
+      <h2 class="header">About Me</h2>
+      <p>A highly motivated, open minded and hardworking individual who is a consistent high achiever with a love for problem
+solving and taking on intellectual challenges.
+Currently, a student at the University of Bristol, studying for an integrated masters (MSci) in Physics with International
+Experience. This includes a recently completed year abroad at the University of Copenhagen, including modules with
+the Department of Computer Science (DIKU).
+Technical knowledge in Python, C ++, MATLAB and Java with excellent problem-solving skills and the ability to
+understand complex problems and create high quality, efficient and adaptable solutions. Enjoy working as part of a team to create and collaborate on innovative solutions.</p>
+        
+<p>I am a Data Consultant at Accenture, currently enrolled in the graduate program. I am working on internal projects utilizing a LLM to process cyber vulnerabilities. I have also worked on a personal demographic project aiming to create a user-friendly interface highlighting key statistics across the UK. I have gained AWS Cloud Practitioner certification and am working towards the Azure Fundamentals certification.</p>
+  </section>
+
+<!-- Skills Section -->
+<div class="container">
+  <h2>Skill Set</h2>
+  <div class="bar learning" data-skill="CSS"></div>
+  <div class="bar back basic" data-skill="MatLab"></div>
+  <div class="bar back intermediate" data-skill="C++"></div>
+  <div class="bar front advanced" data-skill="Python"></div>
+  <div class="bar front expert" data-skill="Report Writing"></div>
+
+</div>
+  <!-- Wrapper container for Experience and Education -->
+  <div id="container">
+      <!-- Experience Section -->
+      <ul class="timeline">
+          <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                  <p class="timeline-event-thumbnail">09/2024 - Present</p>
+                  <h3>Data Consultant | STS, Accenture</h3>
+                  <h4>Graduate Program</h4>
+                  <p><strong>Current Role:</strong><br>Working on internal projects using LLM to process cyber vulnerabilities. Personal project involves creating a user-friendly interface highlighting key statistics across the UK. Gained AWS CCP certification and working towards Azure Fundamentals certification.</p>
+              </div>
+          </li>
+        
+  <!-- Sherrer Entry -->
+  <li class="timeline-event">
+      <label class="timeline-event-icon"></label>
+      <div class="timeline-event-copy">
+          <p class="timeline-event-thumbnail">06/2015 - 08/2015</p>
+          <h3>Science Internship | Paul Scherrer Institute PSI </h3>
+          <p><strong>Details:</strong><br>Assisted a PhD students research into the Magnetic Short-Range order of the highly frustrated
+system, MnWO4. As part of the course in Neutron Scattering at the University of Copenhagen, I spent
+a week working in a team of Masters students. Tasked with developing a significant understanding
+of the CAMEA instrument (a Multiplexing Spectrometer) and applying our knowledge of neutron
+scattering. Additionally, researched the structural magnetic properties of the crystals to produce
+informative plots, including successfully mapping the diffusive inelastic properties of the MnWO4</p>
+      </div>
+  </li>
+            <!-- Handlesbanken Entry -->
+  <li class="timeline-event">
+      <label class="timeline-event-icon"></label>
+      <div class="timeline-event-copy">
+          <p class="timeline-event-thumbnail">09/2016 - 06/2018</p>
+          <h3>Banking Internship | Handlesbanken</h3>
+          <p><strong>Details:</strong><br>Completed a graduate-level internship at Handelsbanken in Shrewsbury over an 8-week duration
+learning about the localized banking the company undertakes, whilst completing a program being
+trained to complete day-to-day tasks in the bank. Given the responsibility to manage individual tasks,
+whilst also having the opportunity to spend time with each department within the bank, learning the
+responsibility of each and understanding the inter-departmental dynamics. It was a great experience
+where I was able to develop many skills, particularly customer service, teamwork and decision
+making.</p>
+      </div>
+  </li>
+
+          <!-- Additional timeline events... -->
+      </ul>
+<!-- Education Section -->
+<ul class="timeline">
+  <li class="timeline-event">
+      <label class="timeline-event-icon"></label>
+      <div class="timeline-event-copy">
+          <p class="timeline-event-thumbnail">09/2020 - 06/2024</p>
+          <h3>Integrated Masters in Physics | University of Bristol</h3>
+          <p><strong>Details:</strong><br>Completed an Integrated Master's in Physics at the University of Bristol, with a year abroad studying at Copenhagen University in Denmark. Graduated with First Class Honors.</p>
+      </div>
+  </li>
+
+  <!-- Additional education events -->
+  <li class="timeline-event">
+      <label class="timeline-event-icon"></label>
+      <div class="timeline-event-copy">
+          <p class="timeline-event-thumbnail">09/2018 - 06/2020</p>
+          <h3>A Levels | Wrekin College</h3>
+          <p><strong>Details:</strong><br>Mathematics (A*), Physics (A*), Chemistry (A*)</p>
+      </div>
+  </li>
+    <li class="timeline-event">
+      <label class="timeline-event-icon"></label>
+      <div class="timeline-event-copy">
+          <p class="timeline-event-thumbnail">09/2016 - 06/2018</p>
+          <h3>GCSEs | Wrekin College</h3>
+          <p><strong>Details:</strong><br>Grade 9 - Physics, Chemistry, Mathematics, Art, Geography, English Language. Grade 8 - English Literature, A* - French, A - History</p>
+      </div>
+  </li>
+</ul>
+    
+</body>
+</html>
