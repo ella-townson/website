@@ -238,3 +238,114 @@ body {
 .bar.expert::before { width: calc(100% - 10px); }
 
 
+/* Style for the blog-slider */
+.blog-slider {
+  width: 95%;
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 25px;
+  border-radius: 25px;
+  height: 400px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+/* Ensure the content inside each slider item is aligned properly */
+.blog-slider__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensure proper spacing between image and text */
+  padding: 10px;
+}
+
+/* Image Styling */
+.blog-slider__img {
+  width: 40%; /* Limit the width of the image to 40% */
+  height: 250px; /* Set height to maintain aspect ratio */
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #ddd; /* Add a background color for any empty space */
+}
+
+.blog-slider__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the div without distorting */
+  border-radius: 10px;
+}
+
+/* Content Styling */
+.blog-slider__content {
+  width: 55%; /* Make the content section 55% of the slider item width */
+  padding-left: 20px;
+  text-align: left;
+}
+
+.blog-slider__code {
+  color: #7b7992;
+  margin-bottom: 15px;
+  display: block;
+  font-weight: 500;
+}
+
+.blog-slider__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0d0925;
+  margin-bottom: 20px;
+}
+
+.blog-slider__text {
+  color: #4e4a67;
+  margin-bottom: 30px;
+  line-height: 1.5em;
+}
+
+.blog-slider__button {
+  display: inline-flex;
+  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+  padding: 15px 35px;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 1px;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets, 
+.swiper-pagination-custom, 
+.swiper-pagination-fraction {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+
+.blog-slider__pagination {
+  position: absolute;
+  z-index: 21;
+  right: 20px;
+  width: 11px !important;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.blog-slider__pagination .swiper-pagination-bullet {
+  width: 11px;
+  height: 11px;
+  background: #062744;
+  opacity: 0.2;
+  transition: all .3s;
+}
+
+.blog-slider__pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #fd3838;
+  height: 30px;
+  box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
+}
+
