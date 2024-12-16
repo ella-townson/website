@@ -78,6 +78,17 @@ body {
   color: #ffccff; /* Highlight on hover */
 }
 
+/* Add spacing before the Contact Me section */
+.contact-section {
+    margin-top: 50px; /* Adjust this value to increase/decrease the gap */
+    text-align: center; /* Center-align text if needed */
+}
+
+/* Optional: Add spacing between sections */
+.contact-buttons {
+    margin-bottom: 30px;
+}
+
 /* Main Content Area */
 #main-content {
   margin-left: 300px;
