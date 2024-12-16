@@ -249,22 +249,18 @@ We will go though and edit the code to include information about you.-->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.blog-slider', {
-            slidesPerView: 3,     // Show 3 slides at once
-            spaceBetween: 30,      // Space between slides
-            loop: true,            // Infinite loop
-            pagination: {
+              spaceBetween: 30,
+              effect: 'fade',
+              loop: true,
+              mousewheel: {
+                invert: false,
+              },
+              // autoHeight: true,
+              pagination: {
                 el: '.blog-slider__pagination',
                 clickable: true,
-            },
-            breakpoints: {
-                1024: {
-                    slidesPerView: 2,  // On smaller screens, show 2 slides
-                },
-                768: {
-                    slidesPerView: 1,  // On mobile screens, show 1 slide
-                }
-            }
-        });
+              }
+            });
     </script>
             
 </body>
