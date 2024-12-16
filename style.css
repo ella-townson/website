@@ -1,3 +1,10 @@
+/* The following code is writen in css.
+/* CSS (Cascading Style Sheets) is a language used to style HTML elements on a webpage. 
+It controls how things like text, colors, sizes, and layouts are displayed, helping make the webpage look better. 
+For example, CSS can change the color of a heading or adjust the size of a button. 
+It allows you to design a page’s look separately from its content.
+*/
+
 /* General Reset */
 * {
   margin: 0;
@@ -5,6 +12,7 @@
   box-sizing: border-box;
 }
 
+/* defines the text body parameters, such as the size and font */
 body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -13,13 +21,14 @@ body {
   letter-spacing: 0.05em;
 }
 
+/* The following code styles the sidebar */
 #sidebar {
   position: fixed;
   top: 0;
   left: 0;
   width: 300px;
   height: 100%;
-  background-color: #A100FF;
+  background-color: #A100FF; /* we can change the border color here */ 
   color: white;
   padding: 30px 20px;
   text-align: center;
@@ -27,7 +36,7 @@ body {
   flex-direction: column;
   align-items: center;
   overflow-y: auto;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Adds subtle depth */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); 
 }
 
 #sidebar header {
@@ -46,6 +55,7 @@ body {
   margin-bottom: 20px;
 }
 
+/* sets parameters for your profile image */
 .profile-img {
   width: 100px; /* Adjust size as needed */
   height: 100px; /* Ensures the image is a square */
@@ -54,6 +64,8 @@ body {
   border: 3px solid white; /* Optional: Adds a white border around the image */
   margin-bottom: 20px; /* Adds spacing below the image */
 }
+
+/* styles the contact me section */ 
 
 .contact a {
   color: #ffd6ff; /* Softer link color */
@@ -83,6 +95,8 @@ body {
 }
 
 /* Timeline Styling */
+/* the following code formats a time line for us to display your experience and education in */
+
 .timeline {
   margin: 4em auto;
   position: relative;
@@ -174,6 +188,7 @@ body {
   from { width: 0%; }
 }
 
+/* sets the colors and formatting for the skills bar chart */ 
 .bar {
   background-color: #EEE;
   padding: 2px;
@@ -186,6 +201,7 @@ body {
   width: 100%;
 }
 
+/* sets the bar parameters before so it changes as it "loads"*/ 
 .bar::before {
   content: attr(data-skill);
   background-color: #f3b0ff;
@@ -203,13 +219,14 @@ body {
   background-color: #a6cfe3;
 }
 
+/* we can adjust the bar length here if you want to bring up or down the bars. */
 .bar.learning::before { width: calc(20% - 10px); }
 .bar.basic::before { width: calc(40% - 10px); }
 .bar.intermediate::before { width: calc(60% - 10px); }
 .bar.advanced::before { width: calc(80% - 10px); }
 .bar.expert::before { width: calc(100% - 10px); }
 
-/* Responsive Design */
+/* Responsive Design, helps with fomratting the timelines */
 @media (max-width: 768px) {
   #sidebar {
     position: static;
