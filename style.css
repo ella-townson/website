@@ -418,22 +418,22 @@ body {
 }
 
 /* Blog content styles */
+.blog-slider__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000; /* Black color for the title */
+  margin-bottom: 20px;
+}
+
 .blog-slider__code {
-  color: #7b7992;
+  color: #000000; /* Black color for the subtitle or date */
   margin-bottom: 15px;
   display: block;
   font-weight: 500;
 }
 
-.blog-slider__title {
-  font-size: 24px;
-  font-weight: 700;
-  color: #0d0925;
-  margin-bottom: 20px;
-}
-
 .blog-slider__text {
-  color: #4e4a67;
+  color: #000000; /* Black color for the body text */
   margin-bottom: 30px;
   line-height: 1.5em;
 }
