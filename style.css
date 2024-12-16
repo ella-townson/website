@@ -269,14 +269,22 @@ body {
 
 
 /* Blog Slider */
+
 .blog-slider {
-  width: 100%;
-  max-width: 1200px;
-  margin: 50px auto;
+  width: 100%;  /* Make sure it takes the full width of the container */
+  max-width: 100%;  /* Ensure there's no max-width constraint */
+  margin: 50px auto;  /* Center it with some margin on top and bottom */
   padding: 20px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Center the container on smaller screens */
+@media screen and (max-width: 768px) {
+  .blog-slider {
+    padding: 15px;  /* Reduce padding on smaller screens */
+  }
 }
 
 .blog-slider .header {
@@ -440,10 +448,11 @@ body {
   }
 }
 
-@media screen and (max-width: 576px) {
-  .blog-slider__title {
-    font-size: 18px;
+@media screen and (max-width: 768px) {
+  .blog-slider {
+    padding: 15px;  /* Reduce padding on smaller screens */
   }
+}
 
   .blog-slider__text {
     font-size: 12px;
