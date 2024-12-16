@@ -295,28 +295,19 @@ body {
 
 .blog-slider__item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 20px;
   background-color: #f9f9f9;
   margin: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.4s, transform 0.4s;
-}
-
-.blog-slider__item:hover {
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-  transform: translateY(0);
-  opacity: 1;
 }
 
 .blog-slider__img {
-  width: 40%;
+  width: 100%;
   height: 200px;
   overflow: hidden;
   border-radius: 10px;
@@ -330,7 +321,7 @@ body {
 }
 
 .blog-slider__content {
-  width: 55%;
+  width: 100%;
   padding-left: 20px;
 }
 
@@ -458,4 +449,3 @@ body {
     font-size: 12px;
   }
 }
-
