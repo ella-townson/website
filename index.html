@@ -19,6 +19,34 @@
 We will go though and edit the code to include information about you.-->
 
 <body>
+
+        <!-- Pagination controls -->
+        <div class="blog-slider__pagination swiper-pagination"></div>
+    </div>
+
+    <!-- Your other page content can go here -->
+
+    <!-- Link to Swiper JS (This script initializes Swiper and should be placed at the bottom) -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Link to your custom script.js (if needed) -->
+    <script src="script.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.blog-slider', {
+            spaceBetween: 30,
+            effect: 'fade',
+            loop: true,
+            mousewheel: {
+                invert: false,
+            },
+            pagination: {
+                el: '.blog-slider__pagination',
+                clickable: true,
+            }
+        });
+        
 <!-- This section acts as a side bar. Indlude information such as your profile picture, name, contact detials -->
 <div id="sidebar">
 
