@@ -8,6 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css" rel="stylesheet">
      <!-- Link to style.css -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="script.js"></script>
 <style>
 
@@ -240,23 +241,28 @@ We will go though and edit the code to include information about you.-->
           </div>
         </div>
     
-      <!-- Blog Slider Pagination -->
-      <div class="blog-slider__pagination"></div>
+        <!-- Pagination -->
+        <div class="blog-slider__pagination"></div>
     </div>
 
-        <!-- Link to Swiper JS (This script initializes Swiper and should be placed at the bottom) -->
-    <!-- Initialize Swiper -->
+    <!-- Link to Swiper JS (This script initializes Swiper and should be placed at the bottom) -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.blog-slider', {
-            spaceBetween: 30,
-            effect: 'fade',
-            loop: true,
-            mousewheel: {
-                invert: false,
-            },
+            slidesPerView: 3,     // Show 3 slides at once
+            spaceBetween: 30,      // Space between slides
+            loop: true,            // Infinite loop
             pagination: {
                 el: '.blog-slider__pagination',
                 clickable: true,
+            },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 2,  // On smaller screens, show 2 slides
+                },
+                768: {
+                    slidesPerView: 1,  // On mobile screens, show 1 slide
+                }
             }
         });
     </script>
