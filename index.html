@@ -192,76 +192,73 @@ We will go though and edit the code to include information about you.-->
         </ul>
   </div>
 
-  <div class="blog-slider">
-    <h2 class="header">Follow my interests</h2>
-      <div class="blog-slider__wrp swiper-wrapper">
-        
-        <!-- Blog Slider Item 1 -->
-        <div class="blog-slider__item swiper-slide">
-          <div class="blog-slider__img">
-            <img src="knowledge_graph.png" alt="Image for Knowledge Graphs">
-          </div>
-          <div class="blog-slider__content">
-            <span class="blog-slider__code">16 December 2024</span>
-            <div class="blog-slider__title">Knowledge Graphs</div>
-            <div class="blog-slider__text">
-              I have been exploring how to create knowledge graphs to describe cyber estates. I have recently been exploring using Instuctor to extract KGs from text prompts.
+ <div class="wrapper">
+  <header><h1>Follow My Interests</h1></header>
+  
+  <!-- Slider main container -->
+  <div class="swiper blog-slider">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Blog Slider Item 1 -->
+      <div class="swiper-slide">
+        <div class="content-wrapper">
+          <div class="content">
+            <div class="swiper-avatar">
+              <img src="knowledge_graph.png" alt="Image for Knowledge Graphs">
             </div>
-            <a href="https://python.useinstructor.com/examples/knowledge_graph/" class="blog-slider__button" target="_blank">READ MORE</a>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">16 December 2024</span>
+              <div class="blog-slider__title">Knowledge Graphs</div>
+              <div class="blog-slider__text">
+                I have been exploring how to create knowledge graphs to describe cyber estates. I have recently been exploring using Instuctor to extract KGs from text prompts.
+              </div>
+              <a href="https://python.useinstructor.com/examples/knowledge_graph/" class="blog-slider__button" target="_blank">READ MORE</a>
+            </div>
           </div>
         </div>
-    
-        <!-- Blog Slider Item 2 -->
-        <div class="blog-slider__item swiper-slide">
-          <div class="blog-slider__img">
-            <img src="Screenshot 2024-12-16 at 16.03.20.png" alt="Large Quantitative Models Image">
-          </div>
-          <div class="blog-slider__content">
-            <span class="blog-slider__code">16 December 2024</span>
-            <div class="blog-slider__title">Large Quantitative Models</div>
-            <div class="blog-slider__text">
-              Large Quantitative Models (LQMs) are AI systems that specialize in analyzing and processing large sets of numerical data. Unlike language-based models, LQMs excel in tasks like predictive modeling and optimization, unlocking valuable insights across industries like life sciences, energy, and finance. I’m drawn to LQMs because of their potential to solve complex data problems and drive innovation.
+      </div>
+
+      <!-- Blog Slider Item 2 -->
+      <div class="swiper-slide">
+        <div class="content-wrapper">
+          <div class="content">
+            <div class="swiper-avatar">
+              <img src="Screenshot 2024-12-16 at 16.03.20.png" alt="Large Quantitative Models Image">
             </div>
-            <a href="https://www.sandboxaq.com/solutions/large-quantitative-models" class="blog-slider__button" target="_blank">READ MORE</a>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">16 December 2024</span>
+              <div class="blog-slider__title">Large Quantitative Models</div>
+              <div class="blog-slider__text">
+                Large Quantitative Models (LQMs) are AI systems that specialize in analyzing and processing large sets of numerical data. Unlike language-based models, LQMs excel in tasks like predictive modeling and optimization, unlocking valuable insights across industries like life sciences, energy, and finance.
+              </div>
+              <a href="https://www.sandboxaq.com/solutions/large-quantitative-models" class="blog-slider__button" target="_blank">READ MORE</a>
+            </div>
           </div>
         </div>
-    
-        <!-- Tweet 1 as Blog Slider Item -->
-        <div class="blog-slider__item swiper-slide">
-          <div class="blog-slider__img">
-            <img src="light-bulb-concept-and-ideas-hand-drawn-illustration-vector.jpg" alt="User Image">
-          </div>
-          <div class="blog-slider__content">
-            <span class="blog-slider__code">16 December 2024</span>
-            <div class="blog-slider__title">What I'm reading...</div>
-            <div class="blog-slider__text">
-              An article I read recently about Detecting hallucinations in LLMs using semantic entropy
+      </div>
+
+      <!-- Blog Slider Item 3 -->
+      <div class="swiper-slide">
+        <div class="content-wrapper">
+          <div class="content">
+            <div class="swiper-avatar">
+              <img src="light-bulb-concept-and-ideas-hand-drawn-illustration-vector.jpg" alt="User Image">
             </div>
-            <a href="https://www.nature.com/articles/s41586-024-07421-0" target="_blank">VIEW ARTICLE</a>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">16 December 2024</span>
+              <div class="blog-slider__title">What I'm Reading...</div>
+              <div class="blog-slider__text">
+                An article I read recently about Detecting hallucinations in LLMs using semantic entropy
+              </div>
+              <a href="https://www.nature.com/articles/s41586-024-07421-0" target="_blank">VIEW ARTICLE</a>
+            </div>
           </div>
         </div>
-    
-        <!-- Pagination -->
-        <div class="blog-slider__pagination"></div>
+      </div>
     </div>
 
-    <!-- Link to Swiper JS (This script initializes Swiper and should be placed at the bottom) -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.blog-slider', {
-              spaceBetween: 30,
-              effect: 'fade',
-              loop: true,
-              mousewheel: {
-                invert: false,
-              },
-              // autoHeight: true,
-              pagination: {
-                el: '.blog-slider__pagination',
-                clickable: true,
-              }
-            });
-    </script>
+
+
             
 </body>
 </html>
