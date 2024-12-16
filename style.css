@@ -57,8 +57,8 @@ body {
 
 /* sets parameters for your profile image */
 .profile-img {
-  width: 100px; /* Adjust size as needed */
-  height: 100px; /* Ensures the image is a square */
+  width: 120px; /* Adjust size as needed */
+  height: 120px; /* Ensures the image is a square */
   border-radius: 50%; /* Makes the image circular */
   object-fit: cover; /* Ensures the image fills the circle without distortion */
   border: 3px solid white; /* Optional: Adds a white border around the image */
