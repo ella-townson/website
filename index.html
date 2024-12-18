@@ -257,17 +257,16 @@ We will go though and edit the code to include information about you.-->
     </div>
 
     <!-- Materialize and jQuery Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.carousel');
             var instances = M.Carousel.init(elems, {
                 fullWidth: true,
                 indicators: true,
-                noWrap: false,
-                numVisible: 1
+                numVisible: 3,
+                duration: 300
             });
-        });       
+        });
+    </script>    
 </body>
 </html>
