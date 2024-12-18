@@ -195,10 +195,8 @@ We will go though and edit the code to include information about you.-->
   </div>
 
  <div class="wrapper">
-  <header><h1>Follow My Interests</h1></header>
-  
-  <!-- Slider main container -->
-  <div class="container">
+
+     <div class="container">
         <div class="row">
             <div class="col s12">
                 <h2 class="center-align">Follow My Interests</h2>
@@ -209,16 +207,13 @@ We will go though and edit the code to include information about you.-->
                         <div class="carousel-item" href="#one!">
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="/api/placeholder/300/300" alt="Knowledge Graphs">
+                                    <img src="https://via.placeholder.com/300x250" alt="Knowledge Graphs">
                                 </div>
                                 <div class="card-content">
-                                    <span class="blog-slider__code">16 December 2024</span>
-                                    <h5 class="blog-slider__title">Knowledge Graphs</h5>
-                                    <p class="blog-slider__text">
-                                        I have been exploring how to create knowledge graphs to describe cyber estates. I have recently been exploring using Instuctor to extract KGs from text prompts.
-                                    </p>
+                                    <span class="card-title">Knowledge Graphs</span>
+                                    <p>I have been exploring how to create knowledge graphs to describe cyber estates. I have recently been exploring using Instuctor to extract KGs from text prompts.</p>
                                     <a href="https://python.useinstructor.com/examples/knowledge_graph/" 
-                                       class="waves-effect waves-light btn" 
+                                       class="btn waves-effect waves-light" 
                                        target="_blank">Read More</a>
                                 </div>
                             </div>
@@ -228,16 +223,13 @@ We will go though and edit the code to include information about you.-->
                         <div class="carousel-item" href="#two!">
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="/api/placeholder/300/300" alt="Large Quantitative Models">
+                                    <img src="https://via.placeholder.com/300x250" alt="Large Quantitative Models">
                                 </div>
                                 <div class="card-content">
-                                    <span class="blog-slider__code">16 December 2024</span>
-                                    <h5 class="blog-slider__title">Large Quantitative Models</h5>
-                                    <p class="blog-slider__text">
-                                        Large Quantitative Models (LQMs) are AI systems that specialize in analyzing and processing large sets of numerical data. Unlike language-based models, LQMs excel in tasks like predictive modeling and optimization.
-                                    </p>
+                                    <span class="card-title">Large Quantitative Models</span>
+                                    <p>Large Quantitative Models (LQMs) are AI systems that specialize in analyzing and processing large sets of numerical data.</p>
                                     <a href="https://www.sandboxaq.com/solutions/large-quantitative-models" 
-                                       class="waves-effect waves-light btn" 
+                                       class="btn waves-effect waves-light" 
                                        target="_blank">Read More</a>
                                 </div>
                             </div>
@@ -247,16 +239,13 @@ We will go though and edit the code to include information about you.-->
                         <div class="carousel-item" href="#three!">
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="/api/placeholder/300/300" alt="What I'm Reading">
+                                    <img src="https://via.placeholder.com/300x250" alt="What I'm Reading">
                                 </div>
                                 <div class="card-content">
-                                    <span class="blog-slider__code">16 December 2024</span>
-                                    <h5 class="blog-slider__title">What I'm Reading...</h5>
-                                    <p class="blog-slider__text">
-                                        An article I read recently about Detecting hallucinations in LLMs using semantic entropy
-                                    </p>
+                                    <span class="card-title">What I'm Reading...</span>
+                                    <p>An article I read recently about Detecting hallucinations in LLMs using semantic entropy</p>
                                     <a href="https://www.nature.com/articles/s41586-024-07421-0" 
-                                       class="waves-effect waves-light btn" 
+                                       class="btn waves-effect waves-light" 
                                        target="_blank">View Article</a>
                                 </div>
                             </div>
@@ -276,11 +265,9 @@ We will go though and edit the code to include information about you.-->
             var instances = M.Carousel.init(elems, {
                 fullWidth: true,
                 indicators: true,
-                duration: 300
+                noWrap: false,
+                numVisible: 1
             });
-        });
-    </script>
-
-            
+        });       
 </body>
 </html>
