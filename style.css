@@ -1,9 +1,4 @@
-/* The following code is writen in css.
-/* CSS (Cascading Style Sheets) is a language used to style HTML elements on a webpage. 
-It controls how things like text, colors, sizes, and layouts are displayed, helping make the webpage look better. 
-For example, CSS can change the color of a heading or adjust the size of a button. 
-It allows you to design a page’s look separately from its content.
-*/
+/* Mobile Responsive CSS with Materialize Compatibility */
 
 /* General Reset */
 * {
@@ -12,7 +7,6 @@ It allows you to design a page’s look separately from its content.
   box-sizing: border-box;
 }
 
-/* defines the text body parameters, such as the size and font */
 body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -21,219 +15,161 @@ body {
   letter-spacing: 0.05em;
 }
 
-/* The following code styles the sidebar */
+/* Sidebar - Mobile First Approach */
 #sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 300px;
-  height: 100%;
-  background-color: #A100FF; /* we can change the border color here */ 
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #A100FF;
   color: white;
-  padding: 30px 20px;
+  padding: 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-y: auto;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-#sidebar header {
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
   margin-bottom: 20px;
 }
 
 #sidebar .name {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 #sidebar .job {
-  font-size: 1.2rem;
-  color: #e0c6ff; /* Softer text contrast */
+  font-size: 1.1rem;
+  color: #e0c6ff;
   margin-bottom: 20px;
 }
 
-/* sets parameters for your profile image */
-.profile-img {
-  width: 120px; /* Adjust size as needed */
-  height: 120px; /* Ensures the image is a square */
-  border-radius: 50%; /* Makes the image circular */
-  object-fit: cover; /* Ensures the image fills the circle without distortion */
-  border: 3px solid white; /* Optional: Adds a white border around the image */
-  margin-bottom: 20px; /* Adds spacing below the image */
-}
-
-/* styles the contact me section */ 
-
-.contact a {
-  color: #ffd6ff; /* Softer link color */
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.contact a:hover {
-  color: #ffccff; /* Highlight on hover */
-}
-
-/* Add spacing before the Contact Me section */
-.contact-section {
-    margin-top: 50px; /* Adjust this value to increase/decrease the gap */
-    text-align: center; /* Center-align text if needed */
-}
-
-/* Optional: Add spacing between sections */
-.contact-buttons {
-    margin-bottom: 30px;
-}
-
-/* Main Content Area */
+/* Main Content Area - Mobile First */
 #main-content {
-  margin-left: 300px;
-  padding: 20px;
+  margin-left: 0;
+  padding: 15px;
   background-color: #f4f4f4;
-  min-height: 100vh;
+  width: 100%;
 }
 
-/* Container Styling */
 #container {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  max-width: 100%;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-/* Timeline Styling */
-/* the following code formats a time line for us to display your experience and education in */
-
+/* Timeline Responsive Modifications */
 .timeline {
-  margin: 4em auto;
-  position: relative;
-  max-width: 46em;
-  width: 45%;
+  margin: 2em auto;
+  max-width: 100%;
+  width: 100%;
 }
 
 .timeline::before {
-  background-color: black;
-  content: '';
-  margin-left: -1px;
-  position: absolute;
-  top: 0;
-  left: 2em;
-  width: 2px;
-  height: 100%;
-}
-
-.timeline-event {
-  position: relative;
-  margin-bottom: 2em;
-}
-
-.timeline-event:hover .timeline-event-icon {
-  transform: rotate(-45deg);
-  background-color: rgb(168, 50, 121);
+  left: 1em;
 }
 
 .timeline-event-copy {
-  padding: 2em;
-  position: relative;
-  top: -1.875em;
-  left: 4em;
-  width: 80%;
-}
-
-.timeline-event-copy h3 {
-  font-size: 1.75em;
-}
-
-.timeline-event-copy h4 {
-  font-size: 1.2em;
-  margin-bottom: 1.2em;
-}
-
-.timeline-event-copy strong {
-  font-weight: 700;
-}
-
-.timeline-event-copy p:not(.timeline-event-thumbnail) {
-  padding-bottom: 1.2em;
+  left: 3em;
+  width: calc(100% - 4em);
+  padding: 1em;
 }
 
 .timeline-event-icon {
-  transition: transform 0.2s ease-in;
-  transform: rotate(45deg);
-  background-color: black;
-  outline: 10px solid white;
-  display: block;
-  margin: 0.5em 0.5em 0.5em -0.5em;
-  position: absolute;
-  top: 0;
-  left: 2em;
-  width: 1em;
-  height: 1em;
+  left: 1em;
 }
 
-.timeline-event-thumbnail {
-  transition: box-shadow 0.5s ease-in 0.1s;
-  color: white;
-  font-size: 0.75em;
-  background-color: black;
-  display: inline-block;
-  margin-bottom: 1.2em;
-  padding: 0.25em 1em 0.2em 1em;
-}
-
-/* Skills Container Styling */
+/* Skills Container Responsive */
 .container {
   width: 100%;
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: #fff;
-  border-radius: 8px;
+  padding: 10px;
 }
 
-/* Skills Bars */
-@keyframes load {
-  from { width: 0%; }
+/* Responsive Media Queries for Larger Screens */
+@media screen and (min-width: 768px) {
+  #sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  #main-content {
+    margin-left: 300px;
+    width: calc(100% - 300px);
+  }
+
+  #container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .timeline {
+    width: 45%;
+    max-width: 46em;
+  }
+
+  .timeline-event-copy {
+    left: 4em;
+    width: 80%;
+  }
+
+  .timeline-event-icon {
+    left: 2em;
+  }
 }
 
-/* sets the colors and formatting for the skills bar chart */ 
+/* Materialize Grid System Compatibility */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.75rem;
+}
+
+.col {
+  box-sizing: border-box;
+  padding: 0 0.75rem;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+/* Responsive Typography */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.9em;
+  }
+
+  .timeline-event-copy h3 {
+    font-size: 1.5em;
+  }
+
+  .timeline-event-copy h4 {
+    font-size: 1em;
+  }
+}
+
+/* Skill Bars - Responsive Adjustments */
 .bar {
-  background-color: #EEE;
-  padding: 2px;
-  border-radius: 15px;
-  margin-bottom: 5px;
-  font-size: 14px;
-  color: #FFF;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
   width: 100%;
+  margin-bottom: 10px;
 }
 
-/* sets the bar parameters before so it changes as it "loads"*/ 
-.bar::before {
-  content: attr(data-skill);
-  background-color: #f3b0ff;
-  display: inline-block;
-  padding: 5px 0 5px 10px;
-  border-radius: inherit;
-  animation: load 2s 0s;
+/* Additional Mobile-Friendly Tweaks for Contact and Buttons */
+.contact-section {
+  margin-top: 30px;
+  text-align: center;
 }
 
-.bar.front::before {
-  background-color: #ffcc33;
+.contact a {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 5px;
 }
-
-.bar.back::before {
-  background-color: #a6cfe3;
-}
-
-/* we can adjust the bar length here if you want to bring up or down the bars. */
-.bar.learning::before { width: calc(20% - 10px); }
-.bar.basic::before { width: calc(40% - 10px); }
-.bar.intermediate::before { width: calc(60% - 10px); }
-.bar.advanced::before { width: calc(80% - 10px); }
-.bar.expert::before { width: calc(100% - 10px); }
-
