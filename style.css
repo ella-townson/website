@@ -237,32 +237,3 @@ body {
 .bar.advanced::before { width: calc(80% - 10px); }
 .bar.expert::before { width: calc(100% - 10px); }
 
-
-     .slider-container {
-            padding: 20px 0;
-            background-color: white;
-        }
-        .carousel .carousel-item {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .carousel .card {
-            width: 90%;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        .carousel .card-image img {
-            height: 250px;
-            object-fit: cover;
-        }
-        .carousel .carousel-item {
-            opacity: 0.6;
-            transform: scale(0.8);
-            transition: all 0.3s ease;
-        }
-        .carousel .carousel-item.active {
-            opacity: 1;
-            transform: scale(1);
-        }
