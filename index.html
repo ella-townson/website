@@ -201,15 +201,6 @@ We will go though and edit the code to include information about you.-->
     <script>
         document.getElementById('downloadPdf').addEventListener('click', () => {
             const element = document.getElementById('Printable Content'); // Target the container
-            const options = {
-                margin: 0.1, // Margin in inches
-                filename: 'full_page_landscape.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { 
-                },
-                jsPDF: { 
-                    orientation: 'landscape' // Set to landscape
-                }
             };
             // Generate and download the PDF
             html2pdf().set(options).from(element).save();
