@@ -10,188 +10,187 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Link to style.css -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <!-- this is the main body of code. It is written in html which is a language used to create and structure content on the web.
 We will go though and edit the code to include information about you.-->
 
 <body>
-<div id="content">      
-<!-- This section acts as a side bar. Indlude information such as your profile picture, name, contact detials -->
-<div id="sidebar">
-
-  <!-- -->
-  <header>
-      <img class="profile-img" src="profile.jpg" alt="Profile Picture"> <!-- save your profile pictire as profile.jpg, doesn't have to be a picture of you-->
-      <ul>
-          <li><h3><b>Ella Townson</b></h3></li> <!-- name -->
-          <li> Data Consultant</li> <!-- 1-3 word description, a.k.a. student-->
-      </ul>
-  </header>
-
-  <!-- Contact Buttons (Email, Phone, LinkedIn), insert yout email, phone number and linked in. Can add or remove as needed.-->
-  <div class="contact-buttons">
-      <button class="contact-button" id="email-button" onclick="window.location.href='mailto:YOU@email.com'">Email: ella.townson@accenture.com</button>
-      <button class="contact-button" id="phone-button" onclick="window.location.href='tel:+44123 456789'">Phone: +44 7456 579 234</button>
-      <button class="contact-button" id="linkedin-button" onclick="window.location.href='https://linkedin.com/in/you'">LinkedIn</button>
-  </div>
-
-  <!-- Contact Form -->
-  <!-- Heading for Contact Me -->
-
-  <section class="contact-section">
-      <h4>Contact Me</h4>
-      <form class="email-form">
-            <input id="name" type="text" placeholder="Name">
-            <input id="email" type="email" placeholder="Email">
-            <textarea id="comment" placeholder="Comment"></textarea>
-            <button class="contact" type="submit">Send</button>
-      </form>
-  </section>
-
-</div>
-
-<!-- Main Content Section -->
-<div id="main-content">
-  <!-- About Me Section -->
-  <section id="about" class="container">
-      <h2 class="header">About Me</h2>
-      <!-- include a paragraph describing you/your interests hobbies --> 
-      <p>
-        A highly motivated, open minded and hardworking individual who is a consistent high achiever with a love for problem
-        solving and taking on intellectual challenges.
-        Currently, a Data Consultant at Accenture, I am enrolled in the graduate programme. I have graduated from thethe University of Bristol, studying an an integrated masters (MSci) in Physics with International
-        Experience, for which I gained a first class honors degree. 
-        This included a year abroad at the University of Copenhagen, which included modules with the Department of Computer Science (DIKU).
-        I successfully completed a First Class Masters Project which explored using theoretical models (DFT+DMFT) to describe the structure of strongly correlated Nickel oxide.
-        I have technical knowledge in Python, C ++, MATLAB and Java with excellent problem-solving skills and the ability to
-        understand complex problems and create high quality, efficient and adaptable solutions. Enjoy working as part of a team to create and collaborate on innovative solutions.
-      </p>
-  </section>
-
-<!-- Skills Section -->
-<!-- This has a bar chart demonstrating your skills going from low to most experience. 
- Chose 5 of your top Skills. 
- Can be adjusted as needed -->
-<div class="container">
-  <h2>Skill Set</h2>
-  <div class="bar learning" 
-  data-skill="CSS"></div> <!-- Insert your skills here as "skill"-->
-  <div class="bar back basic" 
-  data-skill="MatLab"></div> <!-- Insert your skills here as "skill"-->
-  <div class="bar back intermediate" 
-  data-skill="C++"></div> <!-- Insert your skills here as "skill"-->
-  <div class="bar front advanced" 
-  data-skill="Python"></div> <!-- Insert your skills here as "skill"-->
-  <div class="bar front expert" 
-  data-skill="Report Writing"></div> <!-- Insert your skills here as "skill"-->
-</div>
+<div id="Printable Content">      
+    <!-- This section acts as a side bar. Indlude information such as your profile picture, name, contact detials -->
+    <div id="sidebar">
     
-<!-- the following codes for two time lines. On the RHS is experience, this can include events today. On the LHS is education. 
- We can add or remove sections as neccessary. For each item provide: DATE, ROLL TITLE, ROLL DESCRIPTION.  -->
-
-<!-- Wrapper container for Experience and Education -->
-  <h2>Experience and Education</h2>
-  <div id="container">
-      <!-- Experience Section -->
-      <ul class="timeline">
-          <li class="timeline-event">
-              <label class="timeline-event-icon"></label>
-              <div class="timeline-event-copy">
-                  <p class="timeline-event-thumbnail">09/2024 - Present</p> <!--date -->
-                  <h3>Data Consultant | STS, Accenture</h3> <!-- TITLE -->
-                  <h4>Graduate Program</h4> <!-- ROLL -->
-                  <p><strong>Current Role:</strong><br>
-                  <!-- Short Description -->
-                  Working on internal projects using LLM to process cyber vulnerabilities. 
-                  Personal project involves creating a user-friendly interface highlighting key statistics across the UK. 
-                  Gained AWS CCP certification and working towards Azure Fundamentals certification.
-                </p>
-              </div>
-          </li>
-
-          <!-- Additional Experience events-->  
-          <!--2-->  
-          <li class="timeline-event">
-              <label class="timeline-event-icon"></label>
-              <div class="timeline-event-copy">
-                  <p class="timeline-event-thumbnail">06/2023 - 08/2023</p> <!--date -->
-                  <h3>Science Internship | Paul Scherrer Institute PSI </h3> <!-- TITLE + roll  -->
-                  <p><strong>Details:</strong><br>
-                  <!-- short description  --> 
-                  Assisted a PhD students research into the Magnetic Short-Range order of the highly frustrated
-                  system, MnWO4. As part of the course in Neutron Scattering at the University of Copenhagen, I spent
-                  a week working in a team of Masters students. Tasked with developing a significant understanding
-                  of the CAMEA instrument (a Multiplexing Spectrometer) and applying our knowledge of neutron
-                  scattering. Additionally, researched the structural magnetic properties of the crystals to produce
-                  informative plots, including successfully mapping the diffusive inelastic properties of the MnWO4 crystal. </p>
-              </div>
-          </li>
-
-          <!--3-->  
-          <li class="timeline-event">
-              <label class="timeline-event-icon"></label>
-              <div class="timeline-event-copy">
-                  <p class="timeline-event-thumbnail">09/2016 - 06/2018</p> <!--date-->
-                  <h3>Banking Internship | Handlesbanken</h3> <!-- TITLE + roll-->
-                  <p><strong>Details:</strong><br>
-                  <!-- brief description --> 
-                   Completed a graduate-level internship at Handelsbanken in Shrewsbury over an 8-week duration
-                    learning about the localized banking the company undertakes, whilst completing a program being
-                    trained to complete day-to-day tasks in the bank. Given the responsibility to manage individual tasks,
-                    whilst also having the opportunity to spend time with each department within the bank, learning the
-                    responsibility of each and understanding the inter-departmental dynamics. It was a great experience
-                    where I was able to develop many skills, particularly customer service, teamwork and decision
-                    making.
-                  </p>
-              </div>
-          </li>
-        </ul>
-
-        <!-- Education Section -->
-        <ul class="timeline">
-          <li class="timeline-event">
-              <label class="timeline-event-icon"></label>
-              <div class="timeline-event-copy">
-                  <p class="timeline-event-thumbnail">09/2020 - 06/2024</p> <!--date-->
-                  <h3>Integrated Masters in Physics | University of Bristol</h3> <!--What|where-->
-                  <p><strong>Details:</strong><br>
-                  <!-- brief decription-->
-                  Completed an Integrated Master's in Physics at the University of Bristol, 
-                  with a year abroad studying at Copenhagen University in Denmark. Graduated with First Class Honors.
-                </p>
-              </div>
-          </li>
-
-          <!-- Additional education events -->
-          <!--2-->
-          <li class="timeline-event">
-              <label class="timeline-event-icon"></label>
-              <div class="timeline-event-copy">
-                  <p class="timeline-event-thumbnail">09/2018 - 06/2020</p> <!-- add date here -->
-                  <h3>A Levels | Wrekin College</h3> <!-- add education-->
-                  <p><strong>Details:</strong><br>Mathematics (A*), Physics (A*), Chemistry (A*)</p> <!-- add a description including any grades or achievements-->
-              </div>
-          </li>
-
-            <li class="timeline-event">
-              <label class="timeline-event-icon"></label> 
-              <div class="timeline-event-copy">
-                  <p class="timeline-event-thumbnail">09/2016 - 06/2018</p> <!--date-->
-                  <h3>GCSEs | Wrekin College</h3> <!-- add education-->
-                  <p><strong>Details:</strong><br>
-                    <!-- add a description including any grades or achievements-->
-                    Grade 9 - Physics, Chemistry, Mathematics, Art, Geography, English Language. Grade 8 - English Literature, A* - French, A - History
-                  </p>
-              </div>
-          </li>
-        </ul>
-  </div>
-
-    <div class="center-align">
-        <button id="downloadPdf" class="btn waves-effect waves-light">Download as PDF</button>
+      <!-- -->
+      <header>
+          <img class="profile-img" src="profile.jpg" alt="Profile Picture"> <!-- save your profile pictire as profile.jpg, doesn't have to be a picture of you-->
+          <ul>
+              <li><h3><b>Ella Townson</b></h3></li> <!-- name -->
+              <li> Data Consultant</li> <!-- 1-3 word description, a.k.a. student-->
+          </ul>
+      </header>
+    
+      <!-- Contact Buttons (Email, Phone, LinkedIn), insert yout email, phone number and linked in. Can add or remove as needed.-->
+      <div class="contact-buttons">
+          <button class="contact-button" id="email-button" onclick="window.location.href='mailto:YOU@email.com'">Email: ella.townson@accenture.com</button>
+          <button class="contact-button" id="phone-button" onclick="window.location.href='tel:+44123 456789'">Phone: +44 7456 579 234</button>
+          <button class="contact-button" id="linkedin-button" onclick="window.location.href='https://linkedin.com/in/you'">LinkedIn</button>
+      </div>
+    
+      <!-- Contact Form -->
+      <!-- Heading for Contact Me -->
+    
+      <section class="contact-section">
+          <h4>Contact Me</h4>
+          <form class="email-form">
+                <input id="name" type="text" placeholder="Name">
+                <input id="email" type="email" placeholder="Email">
+                <textarea id="comment" placeholder="Comment"></textarea>
+                <button class="contact" type="submit">Send</button>
+          </form>
+      </section>
+    
     </div>
+
+    <!-- Main Content Section -->
+    <div id="main-content">
+      <!-- About Me Section -->
+      <section id="about" class="container">
+          <h2 class="header">About Me</h2>
+          <!-- include a paragraph describing you/your interests hobbies --> 
+          <p>
+            A highly motivated, open minded and hardworking individual who is a consistent high achiever with a love for problem
+            solving and taking on intellectual challenges.
+            Currently, a Data Consultant at Accenture, I am enrolled in the graduate programme. I have graduated from thethe University of Bristol, studying an an integrated masters (MSci) in Physics with International
+            Experience, for which I gained a first class honors degree. 
+            This included a year abroad at the University of Copenhagen, which included modules with the Department of Computer Science (DIKU).
+            I successfully completed a First Class Masters Project which explored using theoretical models (DFT+DMFT) to describe the structure of strongly correlated Nickel oxide.
+            I have technical knowledge in Python, C ++, MATLAB and Java with excellent problem-solving skills and the ability to
+            understand complex problems and create high quality, efficient and adaptable solutions. Enjoy working as part of a team to create and collaborate on innovative solutions.
+          </p>
+      </section>
+    
+        <!-- Skills Section -->
+        <!-- This has a bar chart demonstrating your skills going from low to most experience. 
+         Chose 5 of your top Skills. 
+         Can be adjusted as needed -->
+        <div class="container">
+          <h2>Skill Set</h2>
+          <div class="bar learning" 
+          data-skill="CSS"></div> <!-- Insert your skills here as "skill"-->
+          <div class="bar back basic" 
+          data-skill="MatLab"></div> <!-- Insert your skills here as "skill"-->
+          <div class="bar back intermediate" 
+          data-skill="C++"></div> <!-- Insert your skills here as "skill"-->
+          <div class="bar front advanced" 
+          data-skill="Python"></div> <!-- Insert your skills here as "skill"-->
+          <div class="bar front expert" 
+          data-skill="Report Writing"></div> <!-- Insert your skills here as "skill"-->
+        </div>
+        
+        <!-- the following codes for two time lines. On the RHS is experience, this can include events today. On the LHS is education. 
+         We can add or remove sections as neccessary. For each item provide: DATE, ROLL TITLE, ROLL DESCRIPTION.  -->
+        
+        <!-- Wrapper container for Experience and Education -->
+          <h2>Experience and Education</h2>
+          <div id="container">
+              <!-- Experience Section -->
+              <ul class="timeline">
+                  <li class="timeline-event">
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                          <p class="timeline-event-thumbnail">09/2024 - Present</p> <!--date -->
+                          <h3>Data Consultant | STS, Accenture</h3> <!-- TITLE -->
+                          <h4>Graduate Program</h4> <!-- ROLL -->
+                          <p><strong>Current Role:</strong><br>
+                          <!-- Short Description -->
+                          Working on internal projects using LLM to process cyber vulnerabilities. 
+                          Personal project involves creating a user-friendly interface highlighting key statistics across the UK. 
+                          Gained AWS CCP certification and working towards Azure Fundamentals certification.
+                        </p>
+                      </div>
+                  </li>
+        
+                  <!-- Additional Experience events-->  
+                  <!--2-->  
+                  <li class="timeline-event">
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                          <p class="timeline-event-thumbnail">06/2023 - 08/2023</p> <!--date -->
+                          <h3>Science Internship | Paul Scherrer Institute PSI </h3> <!-- TITLE + roll  -->
+                          <p><strong>Details:</strong><br>
+                          <!-- short description  --> 
+                          Assisted a PhD students research into the Magnetic Short-Range order of the highly frustrated
+                          system, MnWO4. As part of the course in Neutron Scattering at the University of Copenhagen, I spent
+                          a week working in a team of Masters students. Tasked with developing a significant understanding
+                          of the CAMEA instrument (a Multiplexing Spectrometer) and applying our knowledge of neutron
+                          scattering. Additionally, researched the structural magnetic properties of the crystals to produce
+                          informative plots, including successfully mapping the diffusive inelastic properties of the MnWO4 crystal. </p>
+                      </div>
+                  </li>
+        
+                  <!--3-->  
+                  <li class="timeline-event">
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                          <p class="timeline-event-thumbnail">09/2016 - 06/2018</p> <!--date-->
+                          <h3>Banking Internship | Handlesbanken</h3> <!-- TITLE + roll-->
+                          <p><strong>Details:</strong><br>
+                          <!-- brief description --> 
+                           Completed a graduate-level internship at Handelsbanken in Shrewsbury over an 8-week duration
+                            learning about the localized banking the company undertakes, whilst completing a program being
+                            trained to complete day-to-day tasks in the bank. Given the responsibility to manage individual tasks,
+                            whilst also having the opportunity to spend time with each department within the bank, learning the
+                            responsibility of each and understanding the inter-departmental dynamics. It was a great experience
+                            where I was able to develop many skills, particularly customer service, teamwork and decision
+                            making.
+                          </p>
+                      </div>
+                  </li>
+                </ul>
+        
+                <!-- Education Section -->
+                <ul class="timeline">
+                  <li class="timeline-event">
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                          <p class="timeline-event-thumbnail">09/2020 - 06/2024</p> <!--date-->
+                          <h3>Integrated Masters in Physics | University of Bristol</h3> <!--What|where-->
+                          <p><strong>Details:</strong><br>
+                          <!-- brief decription-->
+                          Completed an Integrated Master's in Physics at the University of Bristol, 
+                          with a year abroad studying at Copenhagen University in Denmark. Graduated with First Class Honors.
+                        </p>
+                      </div>
+                  </li>
+        
+                  <!-- Additional education events -->
+                  <!--2-->
+                  <li class="timeline-event">
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                          <p class="timeline-event-thumbnail">09/2018 - 06/2020</p> <!-- add date here -->
+                          <h3>A Levels | Wrekin College</h3> <!-- add education-->
+                          <p><strong>Details:</strong><br>Mathematics (A*), Physics (A*), Chemistry (A*)</p> <!-- add a description including any grades or achievements-->
+                      </div>
+                  </li>
+        
+                    <li class="timeline-event">
+                      <label class="timeline-event-icon"></label> 
+                      <div class="timeline-event-copy">
+                          <p class="timeline-event-thumbnail">09/2016 - 06/2018</p> <!--date-->
+                          <h3>GCSEs | Wrekin College</h3> <!-- add education-->
+                          <p><strong>Details:</strong><br>
+                            <!-- add a description including any grades or achievements-->
+                            Grade 9 - Physics, Chemistry, Mathematics, Art, Geography, English Language. Grade 8 - English Literature, A* - French, A - History
+                          </p>
+                      </div>
+                  </li>
+                </ul>
+          </div>
+
+       <div class="center-align">
+            <button id="downloadPdf" class="btn waves-effect waves-light">Download as PDF</button>
+       </div>
     
 </div>
     
@@ -201,15 +200,22 @@ We will go though and edit the code to include information about you.-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script>
         document.getElementById('downloadPdf').addEventListener('click', () => {
-            const element = document.getElementById('content');
+            const element = document.getElementById('Printable Content'); // Target the container
             const options = {
-                margin: 0.5,
-                filename: 'full_page.pdf',
+                margin: 0.5, // Margin in inches
+                filename: 'full_page_landscape.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2, useCORS: true },
-                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+                html2canvas: { 
+                    scale: 3, // Increase the scale for better quality
+                    useCORS: true // Allow cross-origin resources
+                },
+                jsPDF: { 
+                    unit: 'in', 
+                    format: 'a4', // Use A4 page size for better content fit
+                    orientation: 'landscape' // Set to landscape
+                }
             };
-
+            // Generate and download the PDF
             html2pdf().set(options).from(element).save();
         });
     </script>
