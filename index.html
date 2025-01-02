@@ -200,8 +200,22 @@ We will go though and edit the code to include information about you.-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script>
         document.getElementById('downloadPdf').addEventListener('click', () => {
-            const element = document.getElementById('Printable Content'); // Target the container
+            const element = document.getElementById('printableContent'); // Target the container
+            const options = {
+                margin: 0.5, // Margin in inches
+                filename: 'CV.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { 
+                    scale: 1, // Ensure good resolution
+                    useCORS: true // Allow cross-origin resources
+                },
+                jsPDF: { 
+                    unit: 'in', 
+                    format: 'letter', // Use letter size for simplicity
+                    orientation: 'portrait' // Set to landscape
+                }
             };
+
             // Generate and download the PDF
             html2pdf().set(options).from(element).save();
         });
