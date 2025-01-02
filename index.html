@@ -11,7 +11,6 @@
     <!-- Link to style.css -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 
 <!-- this is the main body of code. It is written in html which is a language used to create and structure content on the web.
@@ -190,15 +189,25 @@ We will go though and edit the code to include information about you.-->
         </ul>
   </div>
 </div>
-</div>
 
-<button onclick="downloadPDF()">Download as PDF</button>
-<script>
-    function downloadPDF() {
-        const element = document.getElementById('content');
-        html2pdf().from(element).save('webpage.pdf');
-    }
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- html2pdf.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        // JavaScript to handle PDF download
+        document.getElementById('downloadPdf').addEventListener('click', () => {
+            const element = document.body; // Element to convert to PDF
+            const options = {
+                margin:       1,
+                filename:     'webpage.pdf',
+                image:        { type: 'jpeg', quality: 0.98 },
+                html2canvas:  { scale: 2 },
+                jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+            
+            html2pdf().set(options).from(element).save();
+        });
+    </script>
     
 </body>
 </html>
