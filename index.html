@@ -202,16 +202,12 @@ We will go though and edit the code to include information about you.-->
         document.getElementById('downloadPdf').addEventListener('click', () => {
             const element = document.getElementById('Printable Content'); // Target the container
             const options = {
-                margin: 0.5, // Margin in inches
+                margin: 0.1, // Margin in inches
                 filename: 'full_page_landscape.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: { 
-                    scale: 3, // Increase the scale for better quality
-                    useCORS: true // Allow cross-origin resources
                 },
                 jsPDF: { 
-                    unit: 'in', 
-                    format: 'a4', // Use A4 page size for better content fit
                     orientation: 'landscape' // Set to landscape
                 }
             };
