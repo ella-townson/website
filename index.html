@@ -11,11 +11,7 @@
     <!-- Link to style.css -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="script.js"></script>
-<style>
-
-
-</style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 
 <!-- this is the main body of code. It is written in html which is a language used to create and structure content on the web.
@@ -194,5 +190,12 @@ We will go though and edit the code to include information about you.-->
         </ul>
   </div>
 
+    <script>
+        function downloadPDF() {
+            const element = document.getElementById('content');
+            html2pdf().from(element).save('webpage.pdf');
+        }
+    </script>
+    
 </body>
 </html>
