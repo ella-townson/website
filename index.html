@@ -192,23 +192,24 @@ We will go though and edit the code to include information about you.-->
     <div class="center-align">
         <button id="downloadPdf" class="btn waves-effect waves-light">Download as PDF</button>
     </div>
+    
 </div>
-
+    
+    <!-- Materialize JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- html2pdf.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script>
-        // JavaScript to handle PDF download
         document.getElementById('downloadPdf').addEventListener('click', () => {
-            const element = document.body; // Element to convert to PDF
+            const element = document.getElementById('printableContent');
             const options = {
-                margin:       1,
-                filename:     'webpage.pdf',
-                image:        { type: 'jpeg', quality: 0.98 },
-                html2canvas:  { scale: 2 },
-                jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+                margin: 0.5,
+                filename: 'full_page.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
             };
-            
+
             html2pdf().set(options).from(element).save();
         });
     </script>
