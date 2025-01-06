@@ -188,38 +188,15 @@ We will go though and edit the code to include information about you.-->
                 </ul>
           </div>
 
+  
        <div class="center-align">
-            <button id="downloadPdf" class="btn waves-effect waves-light">Download as PDF</button>
-       </div>
-    
-</div>
-    
-    <!-- Materialize JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- html2pdf.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    <script>
-        document.getElementById('downloadPdf').addEventListener('click', () => {
-            const element = document.getElementById('printableContent'); // Target the container
-            const options = {
-                margin: 0.5, // Margin in inches
-                filename: 'CV.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { 
-                    scale: 1, // Ensure good resolution
-                    useCORS: true // Allow cross-origin resources
-                },
-                jsPDF: { 
-                    unit: 'in', 
-                    format: 'letter', // Use letter size for simplicity
-                    orientation: 'portrait' // Set to landscape
-                }
-            };
+       <a href="./CV_EllaTownson.pdf" download="CV_EllaTownson.pdf"> <!-- change to name of your document-->
+        <button id="downloadPdf" class="btn waves-effect waves-light">Download as PDF</button>
+      </a>
+      </div>
 
-            // Generate and download the PDF
-            html2pdf().set(options).from(element).save();
-        });
-    </script>
-    
+</div>
+
+
 </body>
 </html>
